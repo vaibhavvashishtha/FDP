@@ -1,2 +1,11 @@
-var person = require('./module.js');
-console.log("My name is: " + person.firstname + " " + person.lastname);
+var log = {
+    info : function(info) {
+        console.log('info', info)
+    },
+    warning : function(warning) {
+        console.log('warning', warning)
+    },
+    debug : function(debug) {
+        console.log('debug', debug)
+    }
+}
