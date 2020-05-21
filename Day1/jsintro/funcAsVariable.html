@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+
+<body>
+    <h2>JS function</h2>
+    <p id="demo"></p>
+    
+</body>
+<script>
+    function toCelsius(tempInF) {
+        return (5/9)*(tempInF-32);
+    }
+
+    function createCelsiusString(temp) {
+        return temp+" degree Celsius";
+    }
+    document.getElementById("demo").innerHTML = createCelsiusString(toCelsius(77));
+</script>
+    
+
+</html>

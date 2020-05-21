@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+
+<body>
+    <h2>JS function</h2>
+    <p id="demo"></p>
+    
+</body>
+<script>
+    //create an object
+    var person = {name: "Vaibhav", age: "35"};
+    var person2 = {name: "Test", age: "20"};
+    
+    function getPersonName() {
+        return person.name;
+    }
+
+    function getPersonAge(person) {
+        return person.age;
+    }
+    document.getElementById("demo").innerHTML = 
+    "name: " +  getPersonName() + " age: " + getPersonAge(person2);
+</script>
+    
+
+</html>
