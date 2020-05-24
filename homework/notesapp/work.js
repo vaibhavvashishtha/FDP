@@ -36,9 +36,7 @@ var removeNote =  (title) => {
 
 var listOfNotes =  () => {
     var notes = loadNotes();
-    notes.forEach((note) => {
-        console.log(note.title);
-    })
+    notes.forEach((note) => console.log(note.title))
 }
 
 var readNotes =  (title) => {
