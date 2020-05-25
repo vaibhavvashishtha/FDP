@@ -19,6 +19,7 @@ hbs.registerPartials(partialsdir);
 
 app.use(express.static(publicdir));
 
+
 app.get('', (req,res) => {
     res.render('index', {
         title: 'Test Page',
@@ -38,6 +39,13 @@ app.get('/help', (req,res) => {
     res.render('help', {
         title: 'Help Page',
         name: 'Vaibhav V'
+    });
+})
+
+app.get('*', (req,res) => {
+    res.render('404', {
+        title: '404 Page',
+        name: '404 VV'
     });
 })
 
