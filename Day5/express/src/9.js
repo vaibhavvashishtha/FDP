@@ -1,20 +1,23 @@
 //To Understand Partials
 var path = require('path');
 var express = require('express');
+var hbs = require('hbs');
 
 var app = express();
 var publicdir = path.join(__dirname, '../public/');
 var templatesdir = path.join(__dirname, '../templates/');
+var partialsdir = path.join(__dirname, '../partials/');
 
 app.set('view engine','hbs');
 app.set('views', templatesdir);
+hbs.registerPartials(partialsdir);
 
 app.use(express.static(publicdir));
 
 app.get('', (req,res) => {
     res.render('views/index', {
         title: 'Test Page',
-        name: 'Vaibhav'
+        name: 'VV'
     });
 })
 
