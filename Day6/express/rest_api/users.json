@@ -1,0 +1,20 @@
+[
+    {
+        "user": "user1",
+        "firstname": "Vaibhav",
+        "lastname": "Vashishtha",
+        "hobby": "reading"
+    },
+    {
+        "user": "user2",
+        "firstname": "Swati",
+        "lastname": "Sharma",
+        "hobby": "writing"
+    },
+    {
+        "user": "user3",
+        "firstname": "Suruchi",
+        "lastname": "Gagan",
+        "hobby": "Teaching"
+    }
+]
